@@ -3,8 +3,16 @@ from django.http import HttpResponse
 
 def index(request):
 
-    return HttpResponse("Rango says hey there partner! <a href='/rango/about/'>About</a>")
+    # I'm 99% sure it doesn't want me to copy down the comments as well since that would be
+    # borderline Sisyphean
+    context_dict = {'boldmessage' : 'Crunchy, creamy, cookie, candy, cupcake!'}
+    # interesting message there rango mate
+
+    return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
 
-    return HttpResponse("Rango says here is the about page. <a href='/rango/'>Index</a>")
+   
+    context_dict = {'boldmessage' : 'This tutorial has been put together by David.'}
+    return render(request, 'rango/about.html', context=context_dict)
+    

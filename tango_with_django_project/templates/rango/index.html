@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- idk what the above does, whenever I've coded in HTML before this has
+ never been a thing that I've done lmao
+ 
+ guess we'll see   
+ 
+ EDIT: i did in fact see a bit later on-->
+
+ {% load staticfiles %}
+
+<html>
+
+ <head>
+    <title>Rango</title>
+ </head>
+
+ <!-- i probably could have copy pasted all of this but i am slightly worried given the plagiarism
+  information supplied in the assessment spec; so I guess I'm writing it by hand-->
+
+  <body>
+    <h1>
+        Rango says...
+    </h1>
+
+<!-- I hate how HTML is supposed to be laid out so differently from Python, so to circumvent this
+ the html will be indexed SOMEWHAT like python so I don't get an anyeurism anytime I look at the 
+ codebase-->
+
+    <div>
+        hey there partner!
+        <br /><strong>
+            {{ boldmessage }}
+        </strong><br />
+    </div>
+
+    <div>
+        <a href="/rango/about/">About</a><br />
+        <!-- admittedly i should have seen this coming - it is still funny though (16:36)-->
+         <img src="{% static 'images/rango.jpg' %}" 
+         alt="Picture of Rango" />
+        <br />
+    </div>
+  </body>
+
+  <!--first template completed at 15:39 11/02/26-->
+  <!-- scratch that, completed at 16:37 11/02/26-->
+
+</html>
