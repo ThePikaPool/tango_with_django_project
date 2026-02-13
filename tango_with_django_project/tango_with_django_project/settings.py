@@ -38,7 +38,7 @@ matters worse the previous previous week I was badly sick... so... yeah. sorry t
 has wasted your time (20 grand a year for automatic testing LOL BTW), and thanks for looking!
 '''
 
-
+LOGIN_URL = 'rango:login'
 
 
 
