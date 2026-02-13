@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<!-- just gonna reuse my index.html with minor changes-->
-
+<!-- just gonna reuse my index.html with minor changes--> 
+{% extends 'rango/base.html' %}
  {% load staticfiles %}
 
-<html>
 
- <head>
-    <title>Rango</title>
- </head>
-
-  <body>
-    <h1>
-        Rango says...
-    </h1>
+{% block title_block %}
+About Rango
+{% endblock %}
+ 
+{% block body_block %}
+    <h1>Rango says...</h1>
 
     <div>
+        here is the about page.<br />
 
-        here is the about page.
-
-        <br /><strong>
-            {{ boldmessage }}
-        </strong><br />
-
+        <strong>{{ boldmessage }}</strong><br />
     </div>
 
     <div>
@@ -31,6 +24,4 @@
         <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" /><br />
 
     </div>
-  </body>
-
-</html>
+{% endblock %}
